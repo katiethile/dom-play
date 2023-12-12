@@ -10,9 +10,12 @@
   <style>
     /*.hamlet{
         background-color: yellow;
-    }*/
+  
 
-
+    #play span{
+      background-color: yellow;
+    }
+ }*/
   </style>
  </head>
  <body>
@@ -24,11 +27,18 @@
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </nav>
      </header>
-     
+  
    <main class="wrapper">
-    <p><span onclick="highlight(this)" class="hamlet">Hamlet: To be or not to be?</span></p>
-    <p><span class="skull">Skull: Are you talking to me?</span></p>
-    <p><span class="hamlet">Hamlet: What did you say?</span></p>
+    <p>Below, when you click on the different actors below, it will highlight only the words spoken from them to orange, leaving the rest to be white. There are 3 actors here: Hamlet, Skull, and Ophelia. So when you click on Hamlet's line, it'll turn orange, while Ophelia and Skull's line remain white and vice versa.</p>
+
+    <div id="play">
+    <p><span data-actor="hamlet"><b>Hamlet:</b> To be or not to be?</span></p>
+    <p><span data-actor="skull"><b>Skull:</b> Are you talking to me?</span></p>
+    <p><span data-actor="hamlet"><b>Hamlet:</b> What did you say?</span></p>
+    <p><span data-actor="skull"><b>Skull:</b> I didn't say anything, I'm only a skull.</span></p>
+    <p><span data-actor="hamlet"><b>Hamlet:</b> Good, because I thought I was going crazy.</span></p>
+    <p><span data-actor="ophelia"><b>Ophelia:</b> Are you talking to Skull again? He lies!</span></p>
+    </div>
      <footer>
       <p><small>&copy; 2023 by 
           KATIE LE, All Rights Reserved ~ 
